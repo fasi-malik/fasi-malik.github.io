@@ -4,14 +4,14 @@ title: "How Machines Learn to Rebuild Particle Showers"
 description: "An intuitive explainer on how AI models evaluate reconstruction quality — using ARI, Purity, and Efficiency."
 date: 2025-10-06
 featured: true
-giscus_comments: true
+giscus_comments: false
 authors:
   - name: Muhammad Bilal Azam
     url: "https://mbilalazam.github.io"
     affiliations:
       name: Illinois Institute of Technology
 tags: AI DUNE particle-physics machine-learning
-# thumbnail: /assets/img/publication_preview/cluster_metrics.png
+thumbnail: /assets/img/posts/2025-10-06-ai-reconstructs-particle-showers/cover.png
 ---
 
 > *When physicists teach machines to recognize the footprints of invisible particles, how do they know the machine has truly understood what it’s seeing?*

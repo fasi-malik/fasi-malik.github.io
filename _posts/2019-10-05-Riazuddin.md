@@ -5,7 +5,7 @@ description: "Tribute article on Professor Riazuddin — one of Pakistan’s gre
 tags: physics Pakistan history Abdus Salam Riazuddin
 date: 2019-10-05
 featured: true
-giscus_comments: true
+giscus_comments: false
 authors:
   - name: Muhammad Bilal Azam
     url: "https://mbilalazam.github.io"

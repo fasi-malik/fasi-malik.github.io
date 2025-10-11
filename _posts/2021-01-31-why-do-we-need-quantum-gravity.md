@@ -4,7 +4,7 @@ title: "Why do we need “Quantum Gravity”?"
 description: "Motivation behind quantum gravity and causal sets."
 tags: physics quantum-gravity causal-set-theory
 date: 2021-01-31
-giscus_comments: true
+giscus_comments: false
 authors:
   - name: Muhammad Bilal Azam
     url: "https://mbilalazam.github.io"
