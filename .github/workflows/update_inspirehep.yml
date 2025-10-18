@@ -1,0 +1,34 @@
+name: Update InspireHEP citation summary
+
+on:
+  schedule:
+    - cron: '0 12 * * 1'   # every Monday at 12:00 UTC
+  workflow_dispatch:
+
+jobs:
+  update-inspirehep:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Fetch InspireHEP citation data
+        run: |
+          curl -s "https://inspirehep.net/api/literature?q=authors.recid:2047024&size=1000&fields=citation_count" > result.json
+          PAPERS=$(jq '.hits.hits | length' result.json)
+          CITES=$(jq '[.hits.hits[].metadata.citation_count // 0] | add' result.json)
+          SORTED=$(jq '[.hits.hits[].metadata.citation_count // 0] | sort | reverse' result.json)
+          HINDEX=$(echo "$SORTED" | jq 'reduce .[] as $c (0; if $c >= .+1 then .+1 else . end)')
+          DATE=$(date -u +"%Y-%m-%d")
+          echo "papers: $PAPERS" > _data/inspirehep.yml
+          echo "citations: $CITES" >> _data/inspirehep.yml
+          echo "hindex: $HINDEX" >> _data/inspirehep.yml
+          echo "updated: $DATE" >> _data/inspirehep.yml
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add _data/inspirehep.yml
+          git diff --cached --quiet || git commit -m "Auto-update InspireHEP citation summary"
+          git push
