@@ -2,7 +2,7 @@
 layout: page
 title: The Strange Symmetry of Majorana Fermions
 description: From coffee mugs to quantum computers — how topology meets superconductivity in the hunt for self-conjugate particles.
-img: assets/img/project1/majorana_cover_gemini.jpg
+img: assets/img/project_majorana/majorana_cover_gemini.jpg
 importance: 1
 category: work
 related_publications: false
@@ -13,7 +13,7 @@ At first glance, a coffee mug and a donut seem completely unrelated. But to a to
 <div class="row justify-content-sm-center">
   <div class="col-sm-8 mt-3 mt-md-0">
     {% include figure.liquid 
-       path="assets/img/project1/fig1_mug_donut.png" 
+       path="assets/img/project_majorana/fig1_mug_donut.png" 
        title="Topology in everyday life — a coffee mug and a donut share the same topological feature: one hole." 
        class="img-fluid rounded z-depth-1" %}
   </div>
@@ -26,7 +26,7 @@ A simple yet powerful analogy: in topology, a coffee mug and a donut are equival
 
 Now imagine applying that idea not to objects, but to the **quantum world**. Here, it is not pottery but **wavefunctions** that bend and twist. If one quantum state can be transformed smoothly into another without breaking its energy gap, they share the same *topology*.  This simple geometric principle now defines a whole branch of modern physics — one that connects mathematics, materials science, and the foundations of **quantum computing**.
 
-📄 Curious for more detail? [Read the full technical report (PDF)](assets/pdf/topological_majorana_project.pdf)
+📄 Curious for more detail? [Read the full technical report (PDF)](https://github.com/mbilalazam/mbilalazam.github.io/blob/main/assets/pdf/topological_majorana_project.pdf)
 
 ---
 
@@ -38,7 +38,7 @@ Physicists soon wondered: could superconductors show something similar? It turne
 
 <div class="row justify-content-sm-center">
   <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/project1/fig1_particle_hole_symmetry.png" title="Figure 1. Particle–hole symmetry, the cornerstone of superconductivity" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid path="assets/img/project_majorana/fig1_particle_hole_symmetry.png" title="Figure 1. Particle–hole symmetry, the cornerstone of superconductivity" class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
 <div class="caption">
@@ -55,7 +55,7 @@ This twisting gives rise to a **Chern number**, an integer that acts like a topo
 
 <div class="row justify-content-sm-center">
   <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/project1/fig2_sommerfeld_landau.png" title="Figure 2. From classical to quantum: electrons reshape their identities inside a crystal" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid path="assets/img/project_majorana/fig2_sommerfeld_landau.png" title="Figure 2. From classical to quantum: electrons reshape their identities inside a crystal" class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
 
@@ -69,7 +69,7 @@ Every electron has a mirror partner — a “hole” — and together they form 
 
 <div class="row justify-content-sm-center">
   <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/project1/fig3_excitation_comparison.png" title="Figure 3. Comparison of excitations in normal and superconducting states" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid path="assets/img/project_majorana/fig3_excitation_comparison.png" title="Figure 3. Comparison of excitations in normal and superconducting states" class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
 
@@ -83,7 +83,7 @@ Each end behaves like *half* of a particle, and only when they come together do 
 
 <div class="row justify-content-sm-center">
   <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/project1/fig5_majorana_chain.png" title="Figure 5. The 1-D Majorana chain, showing edge-localized zero modes" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid path="assets/img/project_majorana/fig5_majorana_chain.png" title="Figure 5. The 1-D Majorana chain, showing edge-localized zero modes" class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
 
@@ -103,7 +103,7 @@ When two Majorana modes are exchanged, their joint quantum state changes in a wa
 
 <div class="row justify-content-sm-center">
   <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/project1/fig6_trivial_vs_topological.png" title="Figure 6. Comparison of trivial and topological superconducting spectra" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid path="assets/img/project_majorana/fig6_trivial_vs_topological.png" title="Figure 6. Comparison of trivial and topological superconducting spectra" class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
 
