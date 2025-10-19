@@ -90,7 +90,7 @@ If you’d like to see how this idea unfolds further, continue to [Causal Set Th
 
 The full mathematical derivation — starting from the FLRW metric, integrating over the past light cone, and expanding in powers of curvature — is presented in detail in the document below. It serves as the continuum foundation for modeling quantum fluctuations in spacetime volume.
 
-📄 [Download the complete derivation (PDF)](https://mbilalazam.github.io/projects/project_volume_of_closed_universe.pdf)
+📄 [Download the complete derivation (PDF)](https://github.com/mbilalazam/mbilalazam.github.io/blob/main/assets/pdf/project_volume_of_closed_universe.pdf)
 
 ---
 
