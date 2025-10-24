@@ -1,192 +1,172 @@
 /* =========================================================
-   Urdu RTL + Nastaleeq styling
+   Urdu RTL + Jameel Noori Nastaleeq styling
    ========================================================= */
 
 /* =========================================================
-   Local Nastaleeq font family with multiple weights
+   Local Nastaleeq font family (Regular + Bold)
    ========================================================= */
 
 @font-face {
-	font-family: 'Noto Nastaleeq Urdu';
-	src: url('/assets/fonts/noto-nastaleeq/NotoNastaliqUrdu-Regular.ttf') format('truetype');
+	font-family: 'Jameel Noori Nastaleeq';
+	src: url('/assets/fonts/urdu/JameelNooriNastaleeq-Regular.ttf') format('truetype');
 	font-weight: 400;
 	font-style: normal;
 	font-display: swap;
 }
 
 @font-face {
-	font-family: 'Noto Nastaleeq Urdu';
-	src: url('/assets/fonts/noto-nastaleeq/NotoNastaliqUrdu-Bold.ttf') format('truetype');
+	font-family: 'Jameel Noori Nastaleeq';
+	src: url('/assets/fonts/urdu/JameelNooriNastaleeq-Regular.ttf') format('truetype');
 	font-weight: 700;
 	font-style: normal;
 	font-display: swap;
 }
 
+:root {
+	--urdu-font-size: 1.3em;   /* Global Nastaleeq size for all body text */
+}
 
-/* Urdu text styling */
+/* Apply global Nastaleeq font size baseline */
+.urdu-text,
+.urdu-quote,
+.urdu-poetry,
+.urdu-poem-title {
+	font-size: var(--urdu-font-size) !important;
+}
+
+/* =========================================================
+   Urdu text styling (regular prose)
+   ========================================================= */
+
 body .urdu-text,
 .post-content .urdu-text,
 .markdown-body .urdu-text {
 	direction: rtl;
 	unicode-bidi: embed;
 	text-align: justify;
-	font-family: 'Noto Nastaleeq Urdu', 'Jameel Noori Nastaleeq', 'Urdu Typesetting', serif !important;
-	line-height: 2;
-	font-size: 1.15em;
+	font-family: 'Jameel Noori Nastaleeq', serif !important;
+	line-height: 2.2;
+	font-size: var(--urdu-font-size);
+	word-spacing: 0.04em;
+	text-justify: inter-word;
+	font-style: normal !important;
 }
 
-/* Urdu post titles */
-.urdu-title {
-	direction: rtl;
-	text-align: right;
-	font-family: 'Noto Nastaleeq Urdu', serif !important;
-}
+/* =========================================================
+   Urdu post titles and metadata
+   ========================================================= */
 
-/* Urdu quotations */
-.urdu-quote {
-	direction: rtl;
-	unicode-bidi: embed;
-	border-right: 4px solid #ddd;
-	padding-right: 0.75rem;
-	margin-right: 0.5rem;
-}
-
-/* Urdu post title styling */
 .post-title,
 .page-title {
-	font-family: 'Noto Nastaleeq Urdu', serif !important;
+	font-family: 'Jameel Noori Nastaleeq', serif !important;
 	direction: rtl;
 	text-align: right;
-	line-height: 1.6;
-	font-weight: normal;
+	line-height: 1.8;
+	font-weight: 500;
 }
 
-/* Urdu author metadata styling */
 .post-meta,
 .post-meta a,
 .byline,
 .byline a {
-	font-family: 'Noto Nastaleeq Urdu', serif !important;
+	font-family: 'Jameel Noori Nastaleeq', serif !important;
 	direction: rtl;
 	text-align: right;
+	opacity: 0.85;
+	font-style: normal !important;
 }
 
+/* =========================================================
+   Urdu quotations
+   ========================================================= */
 
-/* --- 1) Turn OFF italics everywhere in Urdu sections --- */
-.urdu-text,
-.urdu-text em,
-.urdu-text i,
-.post-title,
-.page-title,
-.post-meta,
-.post-meta a,
-.byline,
-.byline a,
 .urdu-quote {
-  font-style: normal !important;
+	direction: rtl;
+	unicode-bidi: embed;
+	position: relative;
+	padding-right: 1rem;
+	margin: 1rem 0 1.25rem;
+	border-right: 4px solid #d9d9d9;
+	font-size: inherit !important;
+	line-height: 2.2;
+	font-family: 'Jameel Noori Nastaleeq', serif !important;
+	font-style: normal !important;
 }
 
-/* --- 2) Comfortable line spacing and better justification --- */
-.urdu-text {
-  line-height: 2.2;           /* was 1.15–2; increase for Nastaleeq readability */
-  text-align: justify;
-  text-justify: inter-word;    /* browsers that support it */
-  word-spacing: 0.04em;        /* tiny looseness helps Nastaleeq */
-}
-
-/* --- 3) Title & meta polish --- */
-.post-title,
-.page-title {
-  line-height: 1.8;            /* a bit taller for big Nastaleeq titles */
-  font-weight: 500;            /* keep elegant weight */
-}
-.post-meta,
-.byline {
-  direction: rtl;
-  text-align: right;
-  opacity: 0.85;               /* optional subtlety */
-}
-
-/* --- 4) Urdu quotation block with proper guillemets --- */
-/* Use « … » which are common in Urdu/Arabic typesetting */
-.urdu-quote {
-  position: relative;
-  padding-right: 1rem;
-  margin: 1rem 0 1.25rem;
-  border-right: 4px solid #d9d9d9;    /* quote bar on the right for RTL */
-  font-size: 1.15em;                  /* a touch larger */
-  line-height: 2.2;                   /* match body */
-}
-
-/* Insert guillemets automatically */
-.urdu-quote::before,
-.urdu-quote::after {
-  font-family: inherit;
-  font-style: normal;
-  position: relative;
-}
-
+/* For RTL: intentionally reversed to show opening quote on right side */
 .urdu-quote::before {
-  content: "«";
-  margin-left: .25rem;   /* space after opening (RTL) */
+	content: "”";	/* opening (right) */
+	margin-left: .25rem;
 }
 
 .urdu-quote::after {
-  content: "»";
-  margin-right: .25rem;  /* space before closing (RTL) */
+	content: "“";	/* closing (right) */	
+	margin-right: .25rem;
 }
 
-/* If your quoted text already includes ASCII quotes, neutralize them */
-.urdu-text q { quotes: "«" "»"; }
-.urdu-text q::before { content: open-quote; }
-.urdu-text q::after  { content: close-quote; }
+/* =========================================================
+   Nastaleeq Bold support (Markdown + HTML)
+   ========================================================= */
 
-
-/* --- Nastaleeq Bold support (Markdown + HTML) --- */
+/* Nastaleeq bold simulation — heavier visual stroke */
 .urdu-text strong,
 .urdu-text b,
 .markdown-body strong,
 .markdown-body b,
 .post-content strong,
-.post-content b {
-	font-family: 'Noto Nastaleeq Urdu', serif !important;
-	font-weight: 700 !important; /* use the Bold.ttf */
+.post-content b,
+.urdu-poetry strong,
+.urdu-poetry b {
+	font-family: 'Jameel Noori Nastaleeq', serif !important;
+	font-weight: 400 !important;        /* keep same font weight */
+	font-style: normal !important;
 	color: #000;
+
+	/* strong synthetic bold effect */
+	-webkit-text-stroke: 0.6px #000;    /* thicker stroke around glyphs */
+	text-shadow:
+		0.4px 0   #000,
+		-0.4px 0  #000,
+		0   0.4px #000,
+		0  -0.4px #000;                 /* simulate ink spread */
+	filter: contrast(125%) brightness(90%);
 }
 
+
 /* =========================================================
-   Urdu Poetry Styling — Verse-tight + Between-verse spacing
+   Urdu Poetry Styling — tight couplets, verse spacing
    ========================================================= */
+
+
+.urdu-poem-title {
+	direction: rtl;
+	display: flex;
+	justify-content: center;    /* centers the text block itself */
+	text-align: center;
+	font-family: 'Jameel Noori Nastaleeq', serif !important;
+	font-size: calc(var(--urdu-font-size) * 1.6) !important;
+	margin-bottom: 0.6rem;
+	font-weight: 500;
+}
+
 
 .urdu-poetry {
 	direction: rtl;
 	unicode-bidi: embed;
 	font-family: 'Jameel Noori Nastaleeq', serif !important;
 
-	/* Layout */
 	max-width: 32rem;
-	margin: 3rem auto;
+	margin: 1.5rem auto 3rem; /* was 3rem auto; reduces top gap */
 	padding: 0 2rem;
 	text-align: justify;
 	text-align-last: justify;
-	font-size: 2.1em;        /* slightly larger Nastaleeq */
+	font-size: calc(var(--urdu-font-size) * 1.6);
 	word-spacing: 0.06em;
 	letter-spacing: 0.02em;
 	white-space: pre-line;
+
+	/* Adjust verse spacing */
+	line-height: 1.2 !important;        /* tighter within each verse */
+	margin-bottom: 1.0rem !important;   /* smaller gap between verses */
 }
 
-/* Tight line spacing within a verse */
-.urdu-poetry .couplet {
-	line-height: 1.7;        /* tighter spacing between two lines of same verse */
-	margin-bottom: 2.4rem;   /* larger gap before next verse */
-}
-
-/* Optional: title styling remains same */
-.urdu-poem-title {
-	direction: rtl;
-	text-align: center;
-	font-family: 'Jameel Noori Nastaleeq', serif !important;
-	font-size: 1.6em;
-	margin-bottom: 1.5rem;
-	font-weight: 500;
-}
