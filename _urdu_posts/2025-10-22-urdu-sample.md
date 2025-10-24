@@ -7,7 +7,6 @@ lang: ur
 tags: [urdu, nastaleeq, rtl]
 image: /assets/img/posts/urdu_sample/cover.jpg
 ---
-
 <div class="urdu-text" lang="ur" dir="rtl">
 
 <strong>بسم اللہ الرحمٰن الرحیم</strong>

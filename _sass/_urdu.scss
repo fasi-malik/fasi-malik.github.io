@@ -34,6 +34,29 @@
 	font-size: var(--urdu-font-size) !important;
 }
 
+
+/* ---------------------------------------------------
+   Urdu Post Title & Subtitle Styling
+   --------------------------------------------------- */
+.post-title[lang="ur"],
+.page-title[lang="ur"],
+.post-header h1[lang="ur"],
+.post-header h2[lang="ur"],
+.post-header .post-title,
+.post-header .post-subtitle {
+	direction: rtl;
+	text-align: right;
+	font-family: 'Jameel Noori Nastaleeq', serif !important;
+	line-height: 1.9;
+}
+
+.post-header .post-subtitle {
+	font-size: 1.4em;
+	color: #444;
+}
+
+
+
 /* =========================================================
    Urdu text styling (regular prose)
    ========================================================= */
@@ -56,14 +79,16 @@ body .urdu-text,
    Urdu post titles and metadata
    ========================================================= */
 
-.post-title,
-.page-title {
+/* Apply Urdu title style ONLY inside Urdu pages */
+.urdu-page .post-title,
+.urdu-page .page-title {
 	font-family: 'Jameel Noori Nastaleeq', serif !important;
 	direction: rtl;
 	text-align: right;
 	line-height: 1.8;
 	font-weight: 500;
 }
+
 
 .post-meta,
 .post-meta a,

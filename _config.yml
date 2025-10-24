@@ -161,7 +161,13 @@ collections:
     output: true
   projects:
     output: true
-
+  urdu_posts:
+    output: true
+    permalink: /urdu/blogs/:title/
+  urdu_poetry:
+    output: true
+    permalink: /urdu/poetry/:title/
+      
 # -----------------------------------------------------------------------------
 # Jekyll settings
 # -----------------------------------------------------------------------------
@@ -654,3 +660,19 @@ jsonresume:
   - languages
   - interests
   - references
+
+# jekyll-paginate-v2:
+  # enabled: true
+  # autopages:
+    # enabled: false
+  # default:
+    # per_page: 5
+    # sort_field: date
+    # sort_reverse: true
+  # collections:
+    # urdu_posts:
+      # enabled: true
+      # per_page: 5
+      # permalink: '/urdu/blogs/page/:num/'
+      # sort_field: 'date'
+      # sort_reverse: true
