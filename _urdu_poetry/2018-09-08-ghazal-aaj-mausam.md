@@ -1,0 +1,23 @@
+---
+layout: post
+title: "آج موسم بھی عجب موسم ہے"
+author: "محمد بلال اعظم"
+date: 2018-09-08
+slug: ghazal-aaj-mausam
+lang: ur
+tags: [urdu, poetry, ghazal, nastaleeq]
+---
+
+<div class="urdu-poetry" lang="ur">
+آج موسم بھی عجب موسم ہے<br>
+تیری قربت کا سبب موسم ہے<br><br>
+
+ہے تکلم بھی زمانوں پہ محیط<br>
+اور تری جنبشِ لب موسم ہے<br><br>
+
+اب تو وحشت کو قرار آ جائے<br>
+داورا! نوحہ بہ لب موسم ہے<br><br>
+
+جب سے اتری ہے خموشی مجھ میں<br>
+تب سے محرومِ طرب موسم ہے
+</div>
