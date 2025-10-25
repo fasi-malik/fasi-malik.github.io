@@ -1,0 +1,20 @@
+---
+layout: post
+title: "سوکھا ہوا جنگل ہوں، مجھے آگ لگا دو"
+author: "محمد بلال اعظم"
+date: 2014-06-17
+slug: ghazal-sookha-hua-jangal-hoon
+lang: ur
+tags: [urdu, poetry, ghazal, nastaleeq]
+---
+
+<div class="urdu-poetry" lang="ur">
+سوکھا ہوا جنگل ہوں، مجھے آگ لگا دو<br>
+اور پھر کسی دریا میں مری راکھ بہا دو<br><br>
+
+مصلوب کرو، سنگِ ملامت مجھے مارو<br>
+لوگو! مجھے اِس عہد کا منصور بنا دو<br><br>
+
+اِس بار میں آیا ہوں چراغوں کو بجھا کر<br>
+اِس بار مجھے اپنی نگاہوں کی ضیا دو
+</div>
