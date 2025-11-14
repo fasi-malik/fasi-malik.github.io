@@ -2,15 +2,17 @@
 layout: page
 title: "SPINE Camera Synchronization: Multi-View Event Display Sync"
 description: A lightweight JavaScript patch for synchronizing camera motion between reconstructed and truth 3D scenes in SPINE/Plotly visualizations
-img: assets/img/project_spine_camera_sync/spine_sync_cover.png
-importance: 3
+img: assets/img/project_spine_camera_synchronization_patch/spine_gemini_cover.png
+importance: 1
 category: work
 related_publications: false
 ---
 
+---
+
 ## The Problem: Unsynchronized Visualization
 
-When analyzing neutrino detector data with [SPINE](https://github.com/DeepLearnPhysics/spine) , you need to compare two representations of the same event side-by-side:
+When analyzing neutrino detector data with [SPINE](https://github.com/DeepLearnPhysics/spine), you need to compare two representations of the same event side-by-side:
 - **Reconstructed particles**: what the detector and its algorithms measure
 - **Truth particles**: what actually happened in simulation
 
@@ -207,11 +209,5 @@ Early comparisons of reco vs. truth multiplicity distributions, vertex positions
 
 Similar event handlers could synchronize hover interactions, shared annotations, or other cross-scene features. The architecture supports easy extension for other visualization needs.
 
-**Repository**: [SPINE-Camera-Synchronization-Patch](https://github.com/your-username/spine-camera-sync)  
+**Repository**: [SPINE-Camera-Synchronization-Patch](http://github.com/mbilalazam/SPINE-Camera-Synchronization-Patch/)  
 **Framework**: [SPINE - Deep Learning Physics Event Display](https://github.com/DeepLearnPhysics/spine)  
-🔬 **Use Case**: DUNE ND-LAr 2×2 Demonstrator at Fermilab
-
-**Files**:
-- `sync_camera.js` — Core synchronization script
-- `print_and_display_single_event.ipynb` — Integration example with MiniRun6.1 data
-- `MR6p1_0000492_entry_28_reco_0_truth_0.html` — Live demo

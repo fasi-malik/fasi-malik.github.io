@@ -9,7 +9,8 @@ repo_description_lines_max: 2
 # Specific repositories you want to feature prominently
 github_repos:
   # --- Academic / DUNE ---
-  - mbilalazam/dune-setup-utils
+  - mbilalazam/SPINE-Camera-Synchronization-Patch
+  - mbilalazam/dune-setup-utilss
   - mbilalazam/spine-lab
   - mbilalazam/LATEX_templates
 
