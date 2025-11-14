@@ -4,7 +4,7 @@ title: "SPINE Camera Synchronization: Multi-View Event Display Sync"
 description: A lightweight JavaScript patch for synchronizing camera motion between reconstructed and truth 3D scenes in SPINE/Plotly visualizations
 img: assets/img/project_spine_camera_sync/spine_sync_cover.png
 importance: 3
-category: Work
+category: work
 related_publications: false
 ---
 
