@@ -10,7 +10,7 @@ repo_description_lines_max: 2
 github_repos:
   # --- Academic / DUNE ---
   - mbilalazam/SPINE-Camera-Synchronization-Patch
-  - mbilalazam/dune-setup-utilss
+  - mbilalazam/dune-setup-utils
   - mbilalazam/spine-lab
   - mbilalazam/LATEX_templates
 
