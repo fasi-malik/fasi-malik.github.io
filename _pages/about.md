@@ -9,7 +9,7 @@ profile:
   image: prof_pic.jpg
   image_circular: false
   more_info: >
-    <p>Building 362</p>
+    <p>HEP Division</p>
     <p>Argonne National Laboratory</p>
     <p>Lemont, IL 60439</p>
 
